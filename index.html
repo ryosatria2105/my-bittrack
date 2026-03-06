@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Bitcoin Journal</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>₿ My Bitcoin Journal</h1>
+    <p class="by-ryo">by ryo</p>
+
+    <div class="btc-now-text">
+      <p class="btc-label">Harga BTC Now</p>
+      <p class="btc-price" id="btcNowPrice">Loading...</p>
+    </div>
+
+    <input
+      type="text"
+      id="investmentInput"
+      placeholder="Masukkan nominal investasi (contoh: 100.000)"
+    />
+
+    <input
+      type="text"
+      id="buyPriceInput"
+      placeholder="Masukkan harga beli (USD) contoh: 14.000"
+    />
+
+    <button onclick="addInvestment()">Tambah Investasi</button>
+    <button class="clear-btn" onclick="clearAll()">Hapus Semua</button>
+
+    <div class="total">
+      Total Modal : Rp <span id="totalInvestment">0</span>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Nominal (Rp)</th>
+          <th>Harga Beli (USD)</th>
+          <th>Tanggal</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody id="investmentTableBody"></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
