@@ -1,1 +1,1 @@
-Improve project description clarity.
+Improve my project description clarity.
