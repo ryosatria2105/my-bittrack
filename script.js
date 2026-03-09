@@ -133,7 +133,7 @@ async function fetchBtcPrice() {
     const btcPrice = data.bitcoin.usd;
     btcNowPrice.textContent = "USD " + formatUsd(btcPrice);
   } catch (error) {
-    btcNowPrice.textContent = "Gagal ambil harga BTC";
+    btcNowPrice.textContent = "Gagal ambil harga Bitcoin";
     console.error(error);
   }
 }
