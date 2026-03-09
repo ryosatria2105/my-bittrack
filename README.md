@@ -1,1 +1,1 @@
-Minor documentation improvement.
+Improve project description clarity.
